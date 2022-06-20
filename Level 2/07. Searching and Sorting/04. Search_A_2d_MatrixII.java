@@ -1,3 +1,4 @@
+// when both row and col are sorted
 public class Main {
     public static boolean search(int[][]matrix,int target) {
         //write your code here
