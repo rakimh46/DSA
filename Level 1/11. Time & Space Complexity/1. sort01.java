@@ -21,7 +21,6 @@ public class Main {
                 j++;
             }
         }
-
     }
 
     // used for swapping ith and jth elements of array
