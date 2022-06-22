@@ -4,17 +4,16 @@ class Solution {
     public static int maximise(int[] arr) {
         // write your code here
         int sum = 0;
-        int temp = 0;
-        int s1 = 0;
+        int s0 = 0;
         int n = arr.length;
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
-            s1 += arr[i] * i;
+            s0 += arr[i] * i;
         }
 
-        int ans = s1;
-        temp = s1;
-        for (int i = 0; i < arr.length; i++) {
+        int ans = s0;
+        int temp = s0;
+        for (int i = 0; i < arr.length-1; i++) {
             temp = temp + sum - n * (arr[n - 1 - i]);
             ans = Math.max(temp, ans);
         }
